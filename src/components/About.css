@@ -1,0 +1,108 @@
+.about {
+  padding: 80px 0;
+  background-color: var(--fundo);
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column; /* Padrão em coluna para mobile */
+  align-items: center;
+  gap: 3rem; /* Espaçamento entre os itens */
+  text-align: center;
+}
+
+/* Layout de duas colunas para telas maiores */
+@media (min-width: 768px) {
+  .about-container {
+    flex-direction: row; /* Muda para linha em telas maiores */
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+.about-left-side {
+  /* Estilos para o lado esquerdo */
+}
+
+.about-right-side {
+  max-width: 600px;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--azul-medio);
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+/* Linha decorativa abaixo do título */
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background-color: var(--amarelo-vibrante);
+}
+
+.about-right-side p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--azul-claro);
+  margin-bottom: 1rem;
+}
+
+/* Estilo do botão */
+.hero-button {
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--azul-escuro);
+  background-color: var(--amarelo-vibrante);
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(255, 195, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 195, 0, 0.5);
+}
+
+.about {
+  padding: 80px 0;
+  background-color: var(--fundo);
+}
+
+/* ... Código existente ... */
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--azul-medio);
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+/* Ajustes para mobile */
+@media (max-width: 752px) {
+  .hero-button {
+    padding: 0.75rem 1.5rem; /* Padding menor */
+    font-size: 0.9rem;      /* Fonte menor */
+  }
+}
+
+/* Ajuste específico para telas muito pequenas */
+@media (max-width: 402px) {
+  .hero-button {
+    padding: 0.6rem 1rem; /* Reduz o padding para se ajustar melhor */
+    font-size: 0.8rem;    /* Reduz ainda mais a fonte */
+  }
+}

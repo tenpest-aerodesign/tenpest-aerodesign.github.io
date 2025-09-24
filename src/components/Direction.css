@@ -1,0 +1,110 @@
+.direction-page {
+  background-color: var(--fundo);
+  color: var(--texto);
+}
+
+.direction-main {
+  padding-top: 100px; /* Adiciona o espaçamento superior para evitar a barra de navegação */
+  padding-bottom: 80px;
+}
+
+.direction-section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Estilo do botão de voltar */
+.back-button {
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--azul-escuro);
+  background-color: var(--cinza-claro);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: var(--azul-claro);
+  color: var(--fundo);
+}
+
+.direction-section h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--azul-medio);
+}
+
+.direction-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--texto);
+  margin-bottom: 1rem;
+}
+
+.contact-info {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  color: var(--azul-medio);
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  margin-bottom: 0.5rem;
+}
+
+.contact-info a {
+  color: var(--amarelo-vibrante);
+}
+
+@media (max-width: 752px) {
+  .direction-main {
+    padding-top: 80px;
+  }
+  .direction-section h1, .contact-info h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Estilo e animação do logo */
+.page-logo {
+  position: absolute; /* Padrão para telas grandes */
+  top: 2rem;
+  right: 2rem;
+  max-width: 250px;
+  height: auto;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideInFromRight 1s ease-out forwards;
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Ajustes para telas menores que 752px */
+@media (max-width: 752px) {
+  .page-logo {
+    position: relative; /* Altera o posicionamento para relativo */
+    top: auto;
+    right: auto;
+    max-width: 80px; /* Reduz o tamanho do logo */
+    margin: 1rem auto; /* Centraliza o logo e adiciona margem */
+    transform: none; /* Remove a transformação inicial */
+    animation: none; /* Remove a animação de deslizar */
+    opacity: 1; /* Garante que o logo esteja visível */
+  }
+}

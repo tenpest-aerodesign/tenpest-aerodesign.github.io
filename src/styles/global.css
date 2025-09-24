@@ -1,0 +1,57 @@
+/* Importando uma fonte moderna do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* Definindo as variáveis de cor no root para fácil acesso */
+:root {
+  --azul-escuro: #0D1B2A;
+  --azul-medio: #1B263B;
+  --azul-claro: #415A77;
+  --amarelo-vibrante: #FFC300;
+  --amarelo-claro: #FFD60A;
+  --fundo: #FFFFFF;
+  --cinza-claro: #E0E1DD;
+  --texto: #333333;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; /* Fonte mais moderna */
+  background-color: var(--fundo);
+  color: var(--texto);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Estilo para containers principais para manter o conteúdo centralizado */
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}

@@ -1,0 +1,98 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 0;
+  z-index: 1000;
+  transition: background-color 0.4s ease, padding 0.4s ease;
+  background-color: transparent; /* Inicialmente transparente */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--fundo); /* Cor branca no topo da página */
+}
+
+.navbar-links a {
+  margin-left: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--fundo); /* Cor branca no topo da página */
+  position: relative;
+  padding-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+/* Efeito de sublinhado animado para a cor amarela */
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--amarelo-vibrante);
+  transition: width 0.3s ease;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+/* Estilos aplicados quando a barra é rolada */
+.navbar.scrolled {
+  background-color: var(--azul-escuro); /* Muda para azul escuro */
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled .navbar-logo,
+.navbar.scrolled .navbar-links a {
+  color: var(--cinza-claro); /* Muda a cor do texto para cinza claro */
+}
+
+.navbar.scrolled .navbar-links a:hover {
+  color: var(--amarelo-vibrante); /* Cor de hover ao rolar */
+}
+
+.navbar.scrolled .navbar-links a::after {
+  background-color: var(--amarelo-vibrante);
+}
+
+/* Código existente do navbar.css */
+
+.navbar-links {
+  display: flex;
+  /* ... outros estilos ... */
+}
+
+/* Esconde a navegação padrão em telas pequenas */
+@media (max-width: 752px) {
+  .navbar-links {
+    display: none;
+  }
+}
+
+.hamburger-menu {
+  display: none; /* Esconde o botão por padrão */
+  font-size: 2rem;
+  color: var(--fundo);
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* Mostra o botão de hambúrguer em telas pequenas */
+@media (max-width: 752px) {
+  .hamburger-menu {
+    display: block;
+  }
+}
