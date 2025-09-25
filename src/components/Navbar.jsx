@@ -1,17 +1,27 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import MobileMenu from './MobileMenu'; // Importe o novo componente
+import { Link, useLocation } from 'react-router-dom'; // Importe o useLocation
+import MobileMenu from './MobileMenu';
 import './Navbar.css';
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation(); // Obtém a localização atual
+
+  const isHomePage = location.pathname === '/'; // Verifica se é a página principal
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   useEffect(() => {
+    if (!isHomePage) {
+      // Se não estiver na página inicial, o header deve ser sempre sólido
+      setScrolled(true);
+      return;
+    }
+
+    // Lógica de rolagem somente para a página inicial
     const handleScroll = () => {
       const isScrolled = window.scrollY > 10;
       if (isScrolled !== scrolled) {
@@ -23,7 +33,7 @@ function Navbar() {
     return () => {
       document.removeEventListener('scroll', handleScroll);
     };
-  }, [scrolled]);
+  }, [scrolled, isHomePage]);
 
   return (
     <>

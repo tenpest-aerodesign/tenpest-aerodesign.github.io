@@ -1,22 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Contact.css';
-import TenpestLogo from '../assets/Logo_tenpest.png'; // Importe a imagem do logo
+import './Contact.css'; // Crie este arquivo CSS para estilizar
 
 function Contact() {
-  const formEndpoint = "https://formspree.io/f/xvgwplnb";
+  const formEndpoint = "https://formspree.io/f/xvgwplnb"; // Substitua por sua URL do Formspree (Fazer login e pedir uma URL)
 
   return (
     <div className="contact-page">
+      <Link to="/" className="back-button">
+        &larr; Voltar para a página inicial
+      </Link>
       <main className="contact-main">
-        {/* Adicione a imagem do logo aqui */}
-        <img src={TenpestLogo} alt="Logo Tenpest" className="page-logo" />
-
         <section className="contact-section">
-          {/* Botão "Voltar para a página inicial" */}
-          <Link to="/" className="back-button">
-            &larr; Voltar para a página inicial
-          </Link>
           <h2>Fale Conosco</h2>
           <p>
             Tem alguma pergunta, sugestão ou quer saber mais sobre nosso trabalho?
