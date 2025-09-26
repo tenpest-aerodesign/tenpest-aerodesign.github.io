@@ -21,14 +21,14 @@ import George from '../assets/George.jpeg'; // Linha corrigida, sem o ponto no f
 import Salles from '../assets/Salles.jpeg'
 import Gilfran from '../assets/Gilfran.jpeg'
 import Ketsa from '../assets/Ketsa.jpeg'
-
-import Logo_tenpest from '../assets/Logo_tenpest.png';
+import TenpestLogo from '../assets/Logo_tenpest.png';
 
 function Trajectory() {
   return (
     <div className="trajectory-page">
-      <main className="trajectory-main">
-        <section className="container trajectory-section">
+          <main className="trajectory-main">
+            <img src={TenpestLogo} alt="Logo Tenpest" className="page-logo" />
+            <section className="container trajectory-section">
           {/* Botão "Voltar para a página inicial" */}
           <Link to="/" className="back-button">
             &larr; Voltar para a página inicial

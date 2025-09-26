@@ -2,11 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import './Direction.css';
+import TenpestLogo from '../assets/Logo_tenpest.png'; // Importe a imagem do logo
 
 function Direction() {
   return (
     <div className="direction-page">
       <main className="direction-main">
+        {/* Adicione a imagem do logo aqui */}
+        <img src={TenpestLogo} alt="Logo Tenpest" className="page-logo" />
         <section className="container direction-section">
           {/* Botão "Voltar para a página inicial" */}
           <Link to="/" className="back-button">

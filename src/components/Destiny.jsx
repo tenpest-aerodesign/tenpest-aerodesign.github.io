@@ -4,12 +4,14 @@ import './Destiny.css';
 import Footer from './Footer';
 import SolidworksLogo from '../assets/Solidworks.png';
 import WoodpeckerLogo from '../assets/Woodpecker.png';
-import AnsysLogo from '../assets/Ansys.png'; 
+import AnsysLogo from '../assets/Ansys.png';
+import TenpestLogo from '../assets/Logo_tenpest.png';
 
 function Destiny() {
   return (
     <div className="destiny-page">
       <main className="destiny-main">
+        <img src={TenpestLogo} alt="Logo Tenpest" className="page-logo" />
         <section className="container destiny-section">
           {/* Botão "Voltar para a página inicial" */}
           <Link to="/" className="back-button">

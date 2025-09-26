@@ -2,13 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import './Join.css';
-import logoBackgroundImage from '../assets/Logo_tenpest.png';
+import TenpestLogo from '../assets/Logo_tenpest.png'; // Importe a imagem do logo
 
 function Join() {
   return (
-     <section id="logo" className="logo" style={{ logoBackgroundImage: `url(${logoBackgroundImage})` }}>
-     <div className="join-page">
+    <div className="join-page">
       <main className="join-main">
+        {/* Adicione a imagem do logo aqui */}
+        <img src={TenpestLogo} alt="Logo Tenpest" className="page-logo" />
+
         <section className="container join-section">
           {/* Botão "Voltar para a página inicial" */}
           <Link to="/" className="back-button">
@@ -31,7 +33,6 @@ function Join() {
       </main>
       <Footer />
     </div>
-    </section>
   );
 }
 
