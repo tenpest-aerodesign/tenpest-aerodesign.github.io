@@ -15,7 +15,7 @@ import './styles/global.css';
 
 function App() {
   return (
-    <Router basename="/tenpest-aerodesign.github.io">
+    <Router basename="/">
       <ScrollToTop />
       <Navbar />
       <Routes>
