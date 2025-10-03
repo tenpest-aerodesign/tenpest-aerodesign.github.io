@@ -1,7 +1,7 @@
 {
   "name": "tenpest-aerodesign",
   "version": "0.0.0",
-  "homepage": "https://tenpest-aerodesign.github.io",
+  "homepage": "https://tenpest-aerodesign.github.io/tenpest-aerodesign",
   "private": true,
   "scripts": {
     "dev": "vite",
