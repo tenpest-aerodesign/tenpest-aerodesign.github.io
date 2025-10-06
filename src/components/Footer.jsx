@@ -6,7 +6,7 @@ function Footer() {
     <footer id="contact" className="footer">
       <div className="container footer-container">
         <p>© {new Date().getFullYear()} Tenpest Aerodesign — Universidade de Pernambuco</p>
-        <p>Todos os direitos reservados.</p>
+        <p>Desenvolvido pelos integrantes</p>
       </div>
     </footer>
   );
