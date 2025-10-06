@@ -188,7 +188,7 @@ function Trajectory() {
                 {/* Agrupamento para as fotos e cargos */}
                 <div className="photo-group">
                   <img src={Giovanna} alt="Giovanna" />
-                  <span className="member-position">Líder de área</span>
+                  <span className="member-position">Membro</span>
                 </div>
                 <div className="photo-group">
                   <img src={Izabella} alt="Izabella" />
