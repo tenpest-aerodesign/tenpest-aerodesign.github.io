@@ -2,25 +2,25 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Trajectory.css';
 import Footer from './Footer';
-import Paulo from '../assets/Paulo.png';
-import Emilly from '../assets/Emilly.png';
-import Miguel from '../assets/Miguel.png';
-import Jose from '../assets/Jose.jpg';
-import Raphael from '../assets/Raphael.png';
-import Matheus from '../assets/Matheus.png';
-import Fernando from '../assets/Fernando.png';
-import Gildson from '../assets/Gildson.png';
-import Olivia from '../assets/Olivia.jpeg'
-import Izabella from '../assets/Izabella.jpeg'
-import Inaldo from '../assets/Inaldo.jpeg'
-import Gustavo from '../assets/Gustavo.jpeg'
-import Heitor from '../assets/Heitor.jpeg'
-import Guilherme from '../assets/Guilherme.png'
-import Giovanna from '../assets/Giovanna.jpeg'
-import George from '../assets/George.jpeg'; // Linha corrigida, sem o ponto no final.
-import Salles from '../assets/Salles.jpeg'
-import Gilfran from '../assets/Gilfran.jpeg'
-import Ketsa from '../assets/Ketsa.jpeg'
+import Paulo from '../assets/membros/Paulo.png';
+import Emilly from '../assets/membros/Emilly.png';
+import Miguel from '../assets/membros/Miguel.png';
+import Jose from '../assets/membros/Jose.jpg';
+import Raphael from '../assets/membros/Raphael.png';
+import Matheus from '../assets/membros/Matheus.png';
+import Fernando from '../assets/membros/Fernando.png';
+import Gildson from '../assets/membros/Gildson.png';
+import Olivia from '../assets/membros/Olivia.jpeg';
+import Izabella from '../assets/membros/Izabella.jpeg';
+import Inaldo from '../assets/membros/Inaldo.jpeg';
+import Gustavo from '../assets/membros/Gustavo.jpeg';
+import Heitor from '../assets/membros/Heitor.jpeg';
+import Guilherme from '../assets/membros/Guilherme.png';
+import Giovanna from '../assets/membros/Giovanna.jpeg';
+import George from '../assets/membros/George.jpeg';
+import Salles from '../assets/membros/Salles.jpeg';
+import Gilfran from '../assets/membros/Gilfran.jpeg';
+import Ketsa from '../assets/membros/Ketsa.jpeg';
 import TenpestLogo from '../assets/Logo_tenpest.png';
 
 function Trajectory() {

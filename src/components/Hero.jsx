@@ -1,16 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './Hero.css'; // O CSS que vamos ajustar a seguir
+import './Hero.css';
 
 // Importe sua imagem de fundo original
 import heroBackgroundImage from '../assets/tenpest.jpg';
 
 // IMPORTANTE: Importe os vídeos que você colocou na pasta 'assets/videos'
 // Troque os nomes dos arquivos pelos nomes dos seus vídeos
-//import video1 from '../assets/Gravação de Tela 2025-09-14 201009.mp4';
-//import video2 from '../assets/Gravação de Tela 2025-09-18 220230.mp4';
+import video1 from '../assets/videos/Voo_1.mp4';
+import video2 from '../assets/videos/Voo_2.mp4';
 
 // Array com a sequência de vídeos
-//const videoSources = [video1, video2];
+const videoSources = [video1, video2];
 
 // Tempo em milissegundos que a imagem ficará na tela (5 segundos)
 const IMAGE_DISPLAY_TIME_MS = 5000;
@@ -39,13 +39,21 @@ function Hero() {
         }
     }, [currentVideoIndex, isShowingImage]);
 
-    // Função para passar para o próximo vídeo da lista
+     // Função chamada quando um vídeo termina
     const handleNextVideo = () => {
-        setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videoSources.length);
+        // Verifica se o vídeo que acabou de tocar é o último da lista
+        if (currentVideoIndex === videoSources.length - 1) {
+            // Se for o último, reseta o índice e volta a exibir a imagem
+            setCurrentVideoIndex(0);
+            setIsShowingImage(true);
+        } else {
+            // Se não for o último, apenas avança para o próximo vídeo
+            setCurrentVideoIndex((prevIndex) => prevIndex + 1);
+        }
     };
 
     return (
-        // A classe 'hero' já existe no seu CSS, vamos mantê-la
+        
         <section id="hero" className="hero">
             {/* Elemento de Mídia (Imagem ou Vídeo) */}
             <div className="hero-media-background">
@@ -60,6 +68,7 @@ function Hero() {
                         playsInline
                         onEnded={handleNextVideo} // Chama o próximo vídeo quando o atual terminar
                         poster={heroBackgroundImage} // Mostra a imagem enquanto o vídeo carrega
+                        
                     />
                 )}
             </div>

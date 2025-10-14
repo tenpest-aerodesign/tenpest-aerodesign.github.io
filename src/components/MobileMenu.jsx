@@ -13,7 +13,7 @@ function MobileMenu({ isOpen, toggleMenu }) {
         <a href="#about" onClick={toggleMenu}>Sobre</a>
         <Link to="/trajectory" onClick={toggleMenu}>Nossa Trajetória</Link>
         <Link to="/destiny" onClick={toggleMenu}>Parceiros</Link>
-        <Link to="/direction" onClick={toggleMenu}>Patrocinadores</Link>
+        <Link to="/direction" onClick={toggleMenu}>Patrocinar</Link>
         <Link to="/join" onClick={toggleMenu}>Seja Tenpest</Link>
         <Link to="/contact" onClick={toggleMenu}>Contato</Link>
       </nav>
