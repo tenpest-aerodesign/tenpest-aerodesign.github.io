@@ -27,7 +27,7 @@ function Join() {
             <p>
               Se você é estudante universitário do campus Benfica e deseja fazer parte de uma equipe que está na vanguarda do aerodesign, inscreva-se para se tornar um membro da Tenpest Aerodesign. Estamos ansiosos para receber novas ideias e energia para continuar nossa jornada rumo ao sucesso.
             </p>
-            <h2>Inscrições abrirão em novembro de 2025</h2>
+            <h2>Processo seletivo em andamento</h2>
           </div>
         </section>
       </main>

@@ -36,7 +36,7 @@ function Direction() {
             Email: <a href="mailto:contato@tenpest.com">tenspestaerodesign@gmail.com</a>
           </p>
           <p>
-            Telefone: (81) 7120-5686
+            Telefone: (81) 9109-2100
           </p>
         </section>
       </main>
