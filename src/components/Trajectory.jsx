@@ -10,15 +10,11 @@ import Raphael from '../assets/membros/Raphael.png';
 import Matheus from '../assets/membros/Matheus.png';
 import Fernando from '../assets/membros/Fernando.png';
 import Gildson from '../assets/membros/Gildson.png';
-import Olivia from '../assets/membros/Olivia.jpeg';
-import Izabella from '../assets/membros/Izabella.jpeg';
 import Inaldo from '../assets/membros/Inaldo.jpeg';
-import Gustavo from '../assets/membros/Gustavo.jpeg';
 import Heitor from '../assets/membros/Heitor.jpeg';
 import Guilherme from '../assets/membros/Guilherme.png';
 import Giovanna from '../assets/membros/Giovanna.jpeg';
 import George from '../assets/membros/George.jpeg';
-import Salles from '../assets/membros/Salles.jpeg';
 import Gilfran from '../assets/membros/Gilfran.jpeg';
 import Ketsa from '../assets/membros/Ketsa.jpeg';
 import TenpestLogo from '../assets/Logo_tenpest.png';
@@ -51,16 +47,21 @@ function Trajectory() {
 
             {/* Membro: Aerodinâmica */}
             <div className="team-member">
-              <div className="member-image-container">
+             <div className="member-image-container">
                 {/* Agrupamento para as fotos e cargos */}
                 <div className="photo-group">
-                  <img src={Gustavo} alt="Gustavo" />
+                  <img src={Miguel} alt="Miguel" />
                   <span className="member-position">Líder de área</span>
                 </div>
                 <div className="photo-group">
-                  <img src={Miguel} alt="Miguel" />
+                  <img src={Inaldo} alt="Inaldo" />
                   <span className="member-position">Membro</span>
                 </div>
+                <div className="photo-group">
+                  <img src={Gildson} alt="Gildson" />
+                  <span className="member-position">Membro</span>
+                </div>
+
               </div>
               <div className="member-info-container">
                 <h3>Aerodinâmica</h3>
@@ -74,6 +75,10 @@ function Trajectory() {
                 <div className="photo-group">
                   <img src={Raphael} alt="Raphael" />
                   <span className="member-position">Líder de área</span>
+                </div>
+                <div className="photo-group">
+                  <img src={Giovanna} alt="Giovanna" />
+                  <span className="member-position">Membro</span>
                 </div>
               </div>
               <div className="member-info-container">
@@ -91,11 +96,11 @@ function Trajectory() {
                   <span className="member-position">Líder de área</span>
                 </div>
                 <div className="photo-group">
-                  <img src={Olivia} alt="Olivia" />
+                  <img src={Jose} alt="Jose" />
                   <span className="member-position">Membro</span>
                 </div>
                 <div className="photo-group">
-                  <img src={Salles} alt="Salles" />
+                  <img src={Emilly} alt="Emilly" />
                   <span className="member-position">Membro</span>
                 </div>
 
@@ -131,10 +136,14 @@ function Trajectory() {
                 {/* Agrupamento para as fotos e cargos */}
                 <div className="photo-group">
                   <img src={Paulo} alt="Paulo" />
-                  <span className="member-position">Membro</span>
+                  <span className="member-position">Líder de área</span>
                 </div>
                 <div className="photo-group">
                   <img src={Guilherme} alt="Guilherme" />
+                  <span className="member-position">Membro</span>
+                </div>
+                <div className="photo-group">
+                  <img src={Heitor} alt="Heitor" />
                   <span className="member-position">Membro</span>
                 </div>
               </div>
@@ -157,6 +166,14 @@ function Trajectory() {
                   <span className="member-position">Membro</span>
                 </div>
               </div>
+              <div className="photo-group">
+                  <img src={Ketsa} alt="Ketsa" />
+                  <span className="member-position">Membro</span>
+                </div>
+                <div className="photo-group">
+                  <img src={Raphael} alt="Raphael" />
+                  <span className="member-position">Membro</span>
+                </div>
               <div className="member-info-container">
                 <h3>Modelagem</h3>
                 <p>Faz a modelagem 3D do avião utilizando o SolidWorks, além de inovar na concepção de encaixes e visual do aerodesign.</p>
@@ -175,6 +192,10 @@ function Trajectory() {
                   <img src={Miguel} alt="Miguel" />
                   <span className="member-position">Membro</span>
                 </div>
+                <div className="photo-group">
+                  <img src={Ketsa} alt="Ketsa" />
+                  <span className="member-position">Membro</span>
+                </div>
               </div>
               <div className="member-info-container">
                 <h3>Cargas e Aeroelasticidade</h3>
@@ -188,10 +209,6 @@ function Trajectory() {
                 {/* Agrupamento para as fotos e cargos */}
                 <div className="photo-group">
                   <img src={Giovanna} alt="Giovanna" />
-                  <span className="member-position">Membro</span>
-                </div>
-                <div className="photo-group">
-                  <img src={Izabella} alt="Izabella" />
                   <span className="member-position">Membro</span>
                 </div>
                 <div className="photo-group">
@@ -234,11 +251,11 @@ function Trajectory() {
               <div className="member-image-container">
                 {/* Agrupamento para as fotos e cargos */}
                 <div className="photo-group">
-                  <img src={Gustavo} alt="Gustavo" />
+                  <img src={Miguel} alt="Miguel" />
                   <span className="member-position">Capitão</span>
                 </div>
                 <div className="photo-group">
-                  <img src={Emilly} alt="Emilly" />
+                  <img src={Giovanna} alt="Giovanna" />
                   <span className="member-position">Vice-capitã</span>
                 </div>
               </div>
