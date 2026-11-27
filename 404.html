@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecionando…</title>
+    <script>
+      // GitHub Pages não conhece as rotas do React: guarda a URL pedida e volta para a raiz,
+      // onde o index.html restaura o caminho certo.
+      sessionStorage.setItem('redirect', location.pathname + location.search + location.hash);
+      location.replace('/');
+    </script>
+  </head>
+  <body></body>
+</html>
